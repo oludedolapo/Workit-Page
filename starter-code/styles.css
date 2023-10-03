@@ -28,9 +28,9 @@ h3 {
   font-family: fraunces;
 }
 
+
 header {
-  /* background-color: rgba(36, 5, 62, 1); */
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
   position: relative;
 }
@@ -43,9 +43,26 @@ header::after {
   left: -20%;
   top: 0;
   z-index: -1;
-  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 35% 35%;
   background-color: #24053e;
+  background-position: 100%;
 
+}
+
+header::before {
+  content: ' ';
+  background: rgb(252, 248, 255);
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  z-index: -1;
+}
+
+.pattern2 {
+  position: absolute;
+  top: 200px;
+  right: -60px;
 }
 
 .navbar {
@@ -54,7 +71,7 @@ header::after {
   align-items: center;
   max-width: 90%;
   margin: auto;
-  margin: 4rem 4rem;
+  padding: 4rem 4rem;
 }
 
 .navbar a {
@@ -74,6 +91,8 @@ header::after {
 
 .hero-text {
   text-align: center;
+  border: 1px solid red;
+  /* margin-bottom: 3rem; */
 
 }
 
@@ -104,16 +123,27 @@ header::after {
   font: inherit;
 }
 
-.img-hero {
-  display: flex;
-  justify-content: center;
-  margin-top: -150px;
+main {
+  position: relative;
+  overflow: hidden;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
 }
 
-.img-hero img {
-  max-width: 45%;
-  height: auto;
+main::after {
+  content: ' ';
+  width: 140%;
+  height: 100%;
+  position: absolute;
+  left: -20%;
+  top: 0;
+  z-index: -1;
+  border-radius: 0 0 35% 35%;
+  background-position: 100%;
+  background-color: rgb(252, 248, 255);
 }
+
+
 
 .description-list {
   /* border: 1px solid red; */
@@ -200,13 +230,7 @@ header::after {
   flex-direction: column;
   gap: 2rem;
   padding: 2.5rem;
-  /* position: absolute; */
-
-  /* bottom: 250px; */
-  /* left: 300px; */
-  /* right: 50px; */
   color: white;
-  /* margin-left: 200px; */
   margin-top: 250px;
   transform: translateX(-120px);
 }
@@ -228,6 +252,7 @@ header::after {
   /* border: 1px solid powderblue; */
   max-width: 90%;
   margin: 0 auto;
+
 }
 
 .footer .footer-img {
