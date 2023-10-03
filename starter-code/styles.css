@@ -59,6 +59,12 @@ header::before {
   z-index: -1;
 }
 
+.pattern1 {
+  position: absolute;
+  bottom: 120px;
+  left: -150px;
+}
+
 .pattern2 {
   position: absolute;
   top: 200px;
@@ -91,7 +97,7 @@ header::before {
 
 .hero-text {
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* margin-bottom: 3rem; */
 
 }
@@ -141,6 +147,12 @@ main::after {
   border-radius: 0 0 35% 35%;
   background-position: 100%;
   background-color: rgb(252, 248, 255);
+}
+
+.img-hero {
+  position: absolute;
+  top: -100px;
+  left: 0;
 }
 
 
@@ -216,9 +228,6 @@ main::after {
 }
 
 .description-bg img {
-  /* height: auto; */
-  /* width: 25%; */
-  /* overflow-y: hidden; */
 
   width: 400px;
 }
@@ -233,6 +242,14 @@ main::after {
   color: white;
   margin-top: 250px;
   transform: translateX(-120px);
+  position: relative;
+}
+
+.description::before {
+  content: url(./assets/images/bg-pattern-3.svg);
+  position: absolute;
+  bottom: -20%;
+  right: 10%;
 }
 
 .description h2 {
