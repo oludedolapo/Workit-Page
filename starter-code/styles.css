@@ -112,9 +112,8 @@ header::before {
 
 .btn {
   display: inline-block;
-  /* border: 1px solid red; */
-  width: 161px;
-  height: 61px;
+  width: 160px;
+  height: 60px;
 }
 
 .btn-mode {
@@ -167,7 +166,6 @@ main::after {
 }
 
 .description-list {
-  /* border: 1px solid red; */
   max-width: 90%;
   display: flex;
   align-items: center;
@@ -188,7 +186,6 @@ main::after {
 }
 
 .item-list {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,28 +214,6 @@ main::after {
   justify-content: center;
   flex-direction: column;
   gap: 1.75rem;
-}
-
-/* || FOOTER */
-.footer {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.description-bg {
-  display: flex;
-  align-items: center;
-  margin: 5rem auto;
-  margin-bottom: 5rem;
-  max-width: 90%;
-
-}
-.bg-image img {
-  width: 100%;
-  position: relative;
-  z-index: -1;
-  justify-self: flex-start;
-  display: block;
 }
 
 .description {
@@ -289,20 +264,43 @@ main::after {
   cursor: pointer;
 }
 
+/* || FOOTER */
+.footer {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.description-bg {
+  display: flex;
+  align-items: center;
+  margin: 5rem auto;
+  margin-bottom: 5rem;
+  max-width: 90%;
+
+}
+
+.bg-image img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  justify-self: flex-start;
+  display: block;
+}
 
 .footer .footer-img {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
   max-width: 90%;
- margin: 9rem auto;
+  margin: 9rem auto;
 }
 
 .footer-list {
   display: flex;
   gap: 1rem;
 }
+
 /* || END OF FOOTER */
